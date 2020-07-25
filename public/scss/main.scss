@@ -1,0 +1,28 @@
+// 1-HELPERS
+@import "./1-helpers/variables";
+@import "./1-helpers/functions";
+@import "./1-helpers/mixins";
+// 2-TOOLS
+
+// 3-BASE
+@import "./3-base/global";
+@import "./3-base/reset";
+
+// 4-LAYOUTS
+@import "./4-layouts/page-section";
+@import "./4-layouts/product-display";
+@import "./4-layouts/_shop-category";
+
+// 5-MODULES
+@import "./5-modules/_info-container";
+@import "./5-modules/dropdown";
+@import "./5-modules/btn-shopnow";
+@import "./5-modules/product-display-box";
+@import "./5-modules/slider-arrow";
+// 6-SECTIONS
+@import "./6-sections/section-header";
+@import "./6-sections/navbar";
+@import "./6-sections/mainCarousel";
+@import "./6-sections/secondCarousel";
+@import "./6-sections/newArrivalMenu";
+@import "./6-sections/category-wise-list";

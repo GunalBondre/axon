@@ -1,0 +1,36 @@
+.info-container {
+  display: none !important;
+
+  @include for-desktop-up {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    padding: 0 60px 0 100px;
+    &__right {
+      padding-right: 30px;
+    }
+    span {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    &__content {
+      padding: 15px;
+      span {
+        padding-right: 40px;
+        i {
+          color: $lightBlue;
+        }
+        strong {
+          font-weight: 500;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+    i {
+      color: $lightBlue;
+    }
+  }
+}

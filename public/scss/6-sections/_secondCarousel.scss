@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+@include for-phone-only {
+  .swiper-slide {
+    display: flex;
+    flex-direction: column !important;
+    &__content {
+      display: none;
+    }
+  }
+}
+
+.second-carousel {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  margin-top: 30px !important;
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    max-width: 100% !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    &__content {
+      text-align: left;
+      padding-left: 30px;
+      &__price {
+        color: $lightBlue;
+        padding: 10px 0 10px 0;
+      }
+    }
+    header {
+      padding: 10px 0 0 0;
+    }
+  }
+}
+.swiper-container-before {
+  position: absolute;
+  width: 570px;
+  max-width: 100%;
+  height: 30px;
+  background-color: $lightBlue;
+  left: 150px;
+  z-index: 10;
+}
+
+.swiper-container-after {
+  position: absolute;
+  width: 570px;
+  max-width: 100%;
+  height: 30px;
+  background-color: $mainBlue;
+  right: 150px;
+  z-index: 10;
+  bottom: 0;
+}

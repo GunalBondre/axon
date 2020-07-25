@@ -1,0 +1,13 @@
+.carousel {
+  position: relative;
+  .carousel-caption--up {
+    position: absolute;
+    text-align: center;
+    @include for-tablet-landscape-up {
+      max-width: 50% !important;
+      left: 60px;
+      top: 40px;
+      text-align: left;
+    }
+  }
+}
